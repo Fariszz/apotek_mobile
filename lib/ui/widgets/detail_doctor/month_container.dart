@@ -1,15 +1,9 @@
 part of '../widgets.dart';
 
-class MonthContainer extends StatefulWidget {
+class MonthContainer extends StatelessWidget {
   String month;
     
   MonthContainer({Key? key, required this.month}) : super(key: key);
-
-  @override
-  State<MonthContainer> createState() => _MonthContainerState();
-}
-
-class _MonthContainerState extends State<MonthContainer> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -17,7 +11,7 @@ class _MonthContainerState extends State<MonthContainer> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(widget.month,
+          Text(month,
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
         ],
       ),

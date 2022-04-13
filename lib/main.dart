@@ -24,8 +24,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => SignInPage(),
         '/sign-up': (context) => SignUpPage(),
-        '/home': (context) => MainPage(),
-        '/product': (context) => ProductPage(),
+        '/home': (context) => MainPage(),        
         '/consultant-list': (context) => Consultant(),
         '/detail-doctor': (context) => DetailDoctor(),
         '/payment': (context) => PaymentPage(),

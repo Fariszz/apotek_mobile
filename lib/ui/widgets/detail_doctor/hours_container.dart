@@ -1,13 +1,9 @@
 part of '../widgets.dart';
 
-class HoursContainer extends StatefulWidget {
+class HoursContainer extends StatelessWidget {
   String hour;
   HoursContainer({Key? key, required this.hour}) : super(key: key);
-  @override
-  State<HoursContainer> createState() => _HoursContainerState();
-}
-
-class _HoursContainerState extends State<HoursContainer> {
+  
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -23,7 +19,7 @@ class _HoursContainerState extends State<HoursContainer> {
           ),
           onPressed: () {},
           child: Text(
-            widget.hour,
+            hour,
             style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
           )),
     );

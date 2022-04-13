@@ -1,17 +1,12 @@
 part of '../widgets.dart';
 
-class DateContainer extends StatefulWidget {
+class DateContainer extends StatelessWidget {
   String day;
   String date;
 
   DateContainer({Key? key, required this.day, required this.date})
       : super(key: key);
 
-  @override
-  State<DateContainer> createState() => _DataContainerState();
-}
-
-class _DataContainerState extends State<DateContainer> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -33,10 +28,10 @@ class _DataContainerState extends State<DateContainer> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(widget.day,
+          Text(day,
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
           SizedBox(height: 8),
-          Text(widget.date,
+          Text(date,
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold))
         ],
       ),

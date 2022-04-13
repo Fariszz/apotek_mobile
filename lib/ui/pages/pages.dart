@@ -9,7 +9,6 @@ part 'main_page.dart';
 part 'sign_in_page.dart';
 part 'sign_up_page.dart';
 part 'general_page.dart';
-part 'product_page.dart';
 part 'consultant_list.dart';
 part 'detail_doctor_page.dart';
 part 'payment_page.dart';
